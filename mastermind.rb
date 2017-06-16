@@ -48,14 +48,14 @@ class Computer
     code = Array.new
     track = Array.new
     respon.each do |x|
-      if x == KeyPeg.new("B")
+      if x == "B"
         #keep random peg n position in previous codepeg
         #add to prospective new guess codepeg
         keep = random_slot(track)
         track.push(keep)
 
         code[keep] = last[keep]
-      elsif x == KeyPeg.new("W")
+      elsif x == "W"
         #keep random peg color but change to random position
         #also add to prospective
         keep2 = random_slot(track)
