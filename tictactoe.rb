@@ -123,7 +123,8 @@ class Game
       game2 = Game.new
       game2.begin_game
     else
-      abort("Well goodbye then!")
+      puts "Well goodbye then!"
+      exit
     end
   end
 end
@@ -142,5 +143,6 @@ if new_game == "Y"
   game1.begin_game
 
 elsif new_game == "N"
-abort("Well goodbye then!")
+puts "Well goodbye then!"
+exit
 end
